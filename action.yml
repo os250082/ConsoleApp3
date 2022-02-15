@@ -8,7 +8,7 @@ inputs:
     description: 'The owner of the repo. Assign from github.repository_owner. Example, "dotnet".'
     required: true
 runs:
-  using: 'docke'
+  using: 'docker'
   image: 'Dockerfile'
   args:
   - '-o'
