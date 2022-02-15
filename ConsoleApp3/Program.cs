@@ -14,6 +14,8 @@ namespace ConsoleApp3
             var calc = new Calc();
             var result = calc.Sum(1, 2);
             Console.WriteLine("The result: " + result);
+            var input = new ActionInputs();
+            Console.WriteLine("Input owner: " + input.Owner);
         }
     }
 }
