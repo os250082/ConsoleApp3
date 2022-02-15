@@ -8,7 +8,8 @@ namespace ConsoleApp3
         {
             Console.WriteLine("Hello World!");
             var greetings = Environment.GetEnvironmentVariable("GREETINGS");
-            
+            Console.WriteLine(greetings);
+
         }
     }
 }
