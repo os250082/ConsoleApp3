@@ -11,6 +11,9 @@ namespace ConsoleApp3
             var greetings = Environment.GetEnvironmentVariable("GREETINGS");
             Console.WriteLine(greetings);
 
+            var calc = new Calc();
+            var result = calc.Sum(1, 2);
+            Console.WriteLine("The result: " + result);
         }
     }
 }
