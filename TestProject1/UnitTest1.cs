@@ -9,7 +9,7 @@ namespace TestProject1
         [TestMethod]
         public void SumTest()
         {
-            var calc = new Calc();
+            var calc = new Calc()
             var result = calc.Sum(1, 2);
             Assert.AreEqual(3, result);
         }
