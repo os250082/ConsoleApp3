@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2opdEIeIeNgm7NqcmcxtbYF9Jmz7vV2m5X+bte3ymksrTiZw4iV8fsMQEnv+L6Kba3315ilnW3qKvtlzmZPE5g==",
+  "dgSpecHash": "8eHbp7fvjtsaCaiGcE4e9//kcZDUQn8wLwwMlEBUYGRlV3eqo9LDnNV9lQpjDaTBF10vTBrLnc2lhtHu7ryMRA==",
   "success": true,
   "projectFilePath": "C:\\GitHub\\ConsoleApp3\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\os250082\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512",
     "C:\\Users\\os250082\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\os250082\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
     "C:\\Users\\os250082\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

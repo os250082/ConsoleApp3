@@ -1,0 +1,15 @@
+name: '.NET code'
+description: 'A Github action
+branding:
+  icon: sliders
+  color: purple
+inputs:
+  owner:
+    description: 'The owner of the repo. Assign from github.repository_owner. Example, "dotnet".'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+  - '-o'
+  - ${{ inputs.owner }}

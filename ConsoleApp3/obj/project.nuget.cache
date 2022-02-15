@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "K2h3fG5ID1Kv93jIkcF0yVimsG/e570ooaYmqncSiq9VBn9nJdDFCSj0O/F49SifzokCbrGUM5uw0UmJx+HReA==",
+  "dgSpecHash": "nGUN/JCF0E1YzEgWlgiodxeCUJb1wI+4cvw6UKRP5DXp4UISOb4H6CbHm2gnppOf0UHs6Sw8cvgj/me/jjIOyQ==",
   "success": true,
   "projectFilePath": "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\os250082\\.nuget\\packages\\commandlineparser\\2.8.0\\commandlineparser.2.8.0.nupkg.sha512"
+  ],
   "logs": []
 }

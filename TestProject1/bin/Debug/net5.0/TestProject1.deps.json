@@ -18,6 +18,14 @@
           "TestProject1.dll": {}
         }
       },
+      "CommandLineParser/2.8.0": {
+        "runtime": {
+          "lib/netstandard2.0/CommandLine.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
+          }
+        }
+      },
       "coverlet.collector/3.0.2": {},
       "Microsoft.CodeCoverage/16.9.4": {
         "runtime": {
@@ -1078,6 +1086,9 @@
         }
       },
       "ConsoleApp3/1.0.0": {
+        "dependencies": {
+          "CommandLineParser": "2.8.0"
+        },
         "runtime": {
           "ConsoleApp3.dll": {}
         }
@@ -1089,6 +1100,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CommandLineParser/2.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eco2HlKQBY4Joz9odHigzGpVzv6pjsXnY5lziioMveQxr+i2Z7xYcIOMeZTgYiqnMtMAbXMXsVhrNfWO5vJS8Q==",
+      "path": "commandlineparser/2.8.0",
+      "hashPath": "commandlineparser.2.8.0.nupkg.sha512"
     },
     "coverlet.collector/3.0.2": {
       "type": "package",
