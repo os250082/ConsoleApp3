@@ -18,3 +18,5 @@ jobs:
     - name: .NET code
       id: dotnet-code
       uses: os250082/ConsoleApp3@main
+      env:
+        GREETINGS: 'Hello, .NET developers!'
