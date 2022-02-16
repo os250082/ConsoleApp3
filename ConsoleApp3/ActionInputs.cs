@@ -7,11 +7,7 @@ namespace ConsoleApp3
     {
         public ActionInputs()
         {
-            var greetings = Environment.GetEnvironmentVariable("GREETINGS");
-            if (greetings is { Length: > 0 })
-            {
-                Console.WriteLine(greetings);
-            }
+            
         }
 
         [Option('o', "owner",
