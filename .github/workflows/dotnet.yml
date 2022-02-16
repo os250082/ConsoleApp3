@@ -21,4 +21,9 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: ${{ github.repository_owner }}  
+        owner: ${{ github.repository_owner }}
+
+    - name: 'Test Output'
+      if: ${{ steps.dotnet-code-metrics.outputs.updated-dotnet }} == 'true'
+      run: |
+        echo 'Great Job'      

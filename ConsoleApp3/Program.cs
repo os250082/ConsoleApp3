@@ -10,4 +10,7 @@ await parser.WithParsedAsync(options => StartAnalysisAsync(options));
 static async Task StartAnalysisAsync(ActionInputs inputs)
 {
     Console.WriteLine("The owner is: " + inputs.Owner);
+
+    bool updateddotnet = true;
+    Console.WriteLine($"::set-output name=updated-dotnet::{updateddotnet}");
 }

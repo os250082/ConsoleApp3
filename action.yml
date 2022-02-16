@@ -7,6 +7,9 @@ inputs:
   owner:
     description: 'The owner of the repo. Assign from github.repository_owner. Example, "dotnet".'
     required: true
+outputs:
+  updated-dotnet:
+    description: 'A boolean value'      
 runs:
   using: 'docker'
   image: 'Dockerfile'
