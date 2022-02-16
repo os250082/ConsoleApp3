@@ -24,6 +24,6 @@ jobs:
         owner: ${{ github.repository_owner }}
 
     - name: 'Test Output'
-      if: ${{ steps.dotnet-code-metrics.outputs.updated-dotnet }} == 'true'
+      if: ${{ steps.dotnet-code.outputs.updated-dotnet }} == 'true'
       run: |
         echo 'Great Job'      
