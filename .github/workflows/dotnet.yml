@@ -20,3 +20,5 @@ jobs:
       uses: os250082/ConsoleApp3@main
       env:
         GREETINGS: 'Hello, .NET developers!'
+      with:
+        owner: ${{ github.repository_owner }}  
