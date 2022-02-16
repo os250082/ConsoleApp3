@@ -9,7 +9,9 @@ inputs:
     required: true
 outputs:
   updated-dotnet:
-    description: 'A boolean value'      
+    description: 'A boolean value'
+  demo:
+    description: 'A string value'        
 runs:
   using: 'docker'
   image: 'Dockerfile'

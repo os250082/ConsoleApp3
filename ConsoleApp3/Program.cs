@@ -12,5 +12,7 @@ static async Task StartAnalysisAsync(ActionInputs inputs)
     Console.WriteLine("The Owner Is: " + inputs.Owner);
 
     bool updateddotnet = false;
+    string str = "Great Test";
     Console.WriteLine($"::set-output name=updated-dotnet::{updateddotnet}");
+    Console.WriteLine($"::set-output name=demo::{str}");
 }
