@@ -26,4 +26,4 @@ jobs:
     - name: 'Test Output'
       if: ${{ steps.dotnet-code.outputs.updated-dotnet }} == 'true'
       run: |
-        echo 'Great Job ${{ steps.dotnet-code.outputs.demo }}''      
+        echo 'Great Job ${{ steps.dotnet-code.outputs.demo }}'      
