@@ -1,21 +1,13 @@
 ﻿using System;
+using System.Threading.Tasks;
+using CommandLine;
+using ConsoleApp3;
+using static CommandLine.Parser;
 
-namespace ConsoleApp3
+var parser = Default.ParseArguments<ActionInputs>(() => new(), args);
+await parser.WithParsedAsync(options => StartAnalysisAsync(options));
+
+static async Task StartAnalysisAsync(ActionInputs inputs)
 {
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-            var greetings = Environment.GetEnvironmentVariable("GREETINGS");
-            Console.WriteLine(greetings);
-
-            var calc = new Calc();
-            var result = calc.Sum(1, 2);
-            Console.WriteLine("The result: " + result);
-            var input = new ActionInputs();
-            Console.WriteLine("Input owner: " + input.Owner);
-        }
-    }
+    Console.WriteLine("The owner is: " + inputs.Owner);
 }
