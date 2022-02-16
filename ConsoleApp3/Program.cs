@@ -11,6 +11,6 @@ static async Task StartAnalysisAsync(ActionInputs inputs)
 {
     Console.WriteLine("The owner is: " + inputs.Owner);
 
-    bool updateddotnet = true;
+    bool updateddotnet = false;
     Console.WriteLine($"::set-output name=updated-dotnet::{updateddotnet}");
 }
