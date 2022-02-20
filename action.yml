@@ -4,8 +4,8 @@ branding:
   icon: sliders
   color: purple
 inputs:
-  owner:
-    description: 'The owner of the repo. Assign from github.repository_owner. Example, "dotnet".'
+  buildPath:
+    description: 'buildPath'
     required: true
 outputs:
   updated-dotnet:
@@ -16,5 +16,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-  - '-o'
-  - ${{ inputs.owner }}
+  - '-buildPath'
+  - ${{ inputs.buildPath }}

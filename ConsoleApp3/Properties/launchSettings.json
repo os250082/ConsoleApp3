@@ -2,7 +2,7 @@
   "profiles": {
     "ConsoleApp3": {
       "commandName": "Project",
-      "commandLineArgs": "-buildPath k1value -folderName k2value -filter k3value"
+      "commandLineArgs": "-buildPath k1value"
     }
   }
 }

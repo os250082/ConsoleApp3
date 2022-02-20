@@ -21,7 +21,7 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: ${{ github.repository_owner }}
+        buildPath: 'c:\LibsLocal'
 
     - name: 'Test Output'
       if: ${{ steps.dotnet-code.outputs.updated-dotnet }} == 'true'

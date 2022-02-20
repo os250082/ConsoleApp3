@@ -12,9 +12,7 @@ class Program
     {
         var switchMappings = new Dictionary<string, string>()
         {
-        { "-buildPath", "key1" },
-        { "-folderName", "key2" },
-        { "-filter", "key3" }
+        { "-buildPath", "key1" }
         };
 
         var builder = new ConfigurationBuilder().AddCommandLine(args, switchMappings);
