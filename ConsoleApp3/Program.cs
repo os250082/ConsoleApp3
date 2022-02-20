@@ -18,5 +18,8 @@ class Program
         var builder = new ConfigurationBuilder().AddCommandLine(args, switchMappings);
         var config = builder.Build();
         Console.WriteLine($"Key1: '{config["Key1"]}'");
+
+        string str = "Master";
+        Console.WriteLine($"::set-output name=demo::{str}");
     }
 }
