@@ -17,12 +17,7 @@ jobs:
 
     - name: Test
       run: |
-          content=`cat ./inputs.json`
-          # the following lines are only required for multi line json
-          content="${content//'%'/'%25'}"
-          content="${content//$'\n'/'%0A'}"
-          content="${content//$'\r'/'%0D'}"
-          # end of optional handling for multi line json
+          $content=`cat ./inputs.json`
           echo "::set-output name=packageJson::$content"
 
     - name: .NET code
