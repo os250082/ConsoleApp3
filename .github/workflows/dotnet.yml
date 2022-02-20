@@ -33,14 +33,14 @@ jobs:
           echo "${BUILD_PATH}"
           echo "${FOLDER_NAME}"
           echo "${FILTER}"
-          echo "${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}"
+          echo "${{fromJson(steps.set_var.outputs.inputsJson).folderName}}"
       shell: bash    
 
     - name: .NET code
       id: dotnet-code
       uses: os250082/ConsoleApp3@main
       env:
-        GREETINGS: '${{fromJson(steps.set_var.outputs.inputsJson).split}}'
+        GREETINGS: '${{fromJson(steps.set_var.outputs.inputsJson).folderName}}'
       with:
         buildPath: "${BUILD_PATH}"
         folderName: 'c:\LibsLocal'
