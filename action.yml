@@ -21,3 +21,9 @@ runs:
   args:
   - '-buildPath'
   - ${{ inputs.buildPath }}
+  - '-folderName'
+  - ${{ inputs.folderName }}
+  - '-filter'
+  - ${{ inputs.filter }}
+  - '-split'
+  - ${{ inputs.split }}
