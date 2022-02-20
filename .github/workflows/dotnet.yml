@@ -18,21 +18,32 @@ jobs:
     - name: Test
       id: set_var
       run: |
-          content=`cat ./package.json`
+          content=`cat ./inputs.json`
           content="${content//'%'/'%25'}"
           content="${content//$'\n'/'%0A'}"
           content="${content//$'\r'/'%0D'}"
           echo "::set-output name=inputsJson::$content"
-      shell: bash 
+      shell: bash
+
+    - name: TestV2
+      env:
+        FOLDER_NAME: ${{fromJson(steps.set_var.outputs.inputsJson).folderName}}
+        FILTER: ${{fromJson(steps.set_var.outputs.inputsJson).filter}}
+      run: |
+          echo "${BUILD_PATH}"
+          echo "${FOLDER_NAME}"
+          echo "${FILTER}"
+          echo "${{fromJson(steps.set_var.outputs.inputsJson).folderName}}"
+      shell: bash    
 
     - name: .NET code
       id: dotnet-code
       uses: os250082/ConsoleApp3@main
-      env:
-        GREETINGS: '${{fromJson(steps.set_var.outputs.inputsJson).keywords}}'
       with:
-        buildPath: "${BUILD_PATH}"
-        folderName: 'c:\LibsLocal'
+        buildPath: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}
+        folderName: ${{fromJson(steps.set_var.outputs.inputsJson).folderName}}
+        filter: ${{fromJson(steps.set_var.outputs.inputsJson).filter}}
+        split: ${{fromJson(steps.set_var.outputs.inputsJson).split}}
 
     - name: 'Test Output'
       if: ${{ steps.dotnet-code.outputs.updated-dotnet }} == 'true'

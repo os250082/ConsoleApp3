@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 as build-env
 
 # Copy everything and publish the release (publish implicitly restores and builds)
-COPY . ./
+COPY . .
 RUN dotnet publish ./ConsoleApp3/ConsoleApp3.csproj -c Release -o out --no-self-contained
 RUN dotnet publish ./TestProject1/TestProject1.csproj -c Release -o out --no-self-contained
 
