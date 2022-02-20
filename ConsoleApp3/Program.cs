@@ -19,7 +19,7 @@ class Program
         var builder = new ConfigurationBuilder().AddCommandLine(args, switchMappings);
 
         var greetings = Environment.GetEnvironmentVariable("GREETINGS");
-        var split = greetings.Split(',');
+        //var split = greetings.Split(',');
         Console.WriteLine(split[0]);
 
         var config = builder.Build();
