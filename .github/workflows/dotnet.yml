@@ -22,6 +22,7 @@ jobs:
         GREETINGS: 'Hello, .NET developers!'
       with:
         buildPath: 'c:\LibsLocal'
+        folderName: 'c:\LibsLocal'
 
     - name: 'Test Output'
       if: ${{ steps.dotnet-code.outputs.updated-dotnet }} == 'true'
