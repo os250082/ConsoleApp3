@@ -28,6 +28,7 @@ jobs:
     - name: TestV2
       run: |
           echo "${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}"
+          echo "${{fromJson(steps.set_var.outputs.inputsJson).folderName}}"
       shell: bash    
 
     - name: .NET code

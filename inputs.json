@@ -1,3 +1,4 @@
-{ 
-    "buildPath": "c:\\build" 
+{
+    "buildPath": "c:\\build",
+    "folderName" : "c:\\folder"
 }
