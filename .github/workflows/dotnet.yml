@@ -15,6 +15,18 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Test
+      run: |
+          content=`cat ./inputs.json`
+          # the following lines are only required for multi line json
+          content="${content//'%'/'%25'}"
+          content="${content//$'\n'/'%0A'}"
+          content="${content//$'\r'/'%0D'}"
+          # end of optional handling for multi line json
+          echo "::set-output name=packageJson::$content"
+      - run: |
+          echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"
+
     - name: .NET code
       id: dotnet-code
       uses: os250082/ConsoleApp3@main
