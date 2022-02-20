@@ -7,6 +7,9 @@ inputs:
   buildPath:
     description: 'buildPath'
     required: true
+  folderName:
+    description: 'folderName'
+    required: true  
 outputs:
   updated-dotnet:
     description: 'A boolean value'
@@ -18,3 +21,5 @@ runs:
   args:
   - '-buildPath'
   - ${{ inputs.buildPath }}
+  - '-folderName'
+  - ${{ inputs.folderName }}
