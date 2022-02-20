@@ -18,16 +18,16 @@ jobs:
     - name: Test
       id: set_var
       run: |
-          content=`cat ./package.json`
+          content=`cat ./inputs.json`
           content="${content//'%'/'%25'}"
           content="${content//$'\n'/'%0A'}"
           content="${content//$'\r'/'%0D'}"
-          echo "::set-output name=packageJson::$content"
+          echo "::set-output name=inputsJson::$content"
       shell: bash
 
     - name: TestV2
       run: |
-          echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"
+          echo "${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}"
       shell: bash    
 
     - name: .NET code
