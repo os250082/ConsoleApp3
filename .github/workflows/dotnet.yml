@@ -37,10 +37,10 @@ jobs:
       shell: bash    
 
     - name: .NET code
-      env:
-        GREETINGS: ${{fromJson(steps.set_var.outputs.inputsJson).split}}   
       id: dotnet-code
       uses: os250082/ConsoleApp3@main
+      env:
+        GREETINGS: 'Hello, .NET developers!'
       with:
         buildPath: "${BUILD_PATH}"
         folderName: 'c:\LibsLocal'
