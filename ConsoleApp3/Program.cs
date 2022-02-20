@@ -12,12 +12,14 @@ class Program
     {
         var switchMappings = new Dictionary<string, string>()
         {
-        { "-buildPath", "key1" }
+            { "-buildPath", "key1" },
+            { "-folderName", "key2" }
         };
 
         var builder = new ConfigurationBuilder().AddCommandLine(args, switchMappings);
         var config = builder.Build();
         Console.WriteLine($"Key1: '{config["Key1"]}'");
+        Console.WriteLine($"Key2: '{config["Key2"]}'");
 
         string str = "Master";
         Console.WriteLine($"::set-output name=demo::{str}");
