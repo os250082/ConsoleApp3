@@ -38,6 +38,8 @@ jobs:
       shell: bash    
 
     - name: .NET code
+      env:
+        BUILD_PATH: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}
       id: dotnet-code
       uses: os250082/ConsoleApp3@main
       env:
