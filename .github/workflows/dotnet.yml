@@ -40,7 +40,7 @@ jobs:
       id: dotnet-code
       uses: os250082/ConsoleApp3@main
       env:
-        GREETINGS: '${{fromJson(steps.set_var.outputs.inputsJson).filter}}'
+        GREETINGS: '${{fromJson(steps.set_var.outputs.inputsJson).split}}'
       with:
         buildPath: "${BUILD_PATH}"
         folderName: 'c:\LibsLocal'
