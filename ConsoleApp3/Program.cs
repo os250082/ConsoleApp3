@@ -17,6 +17,10 @@ class Program
         };
 
         var builder = new ConfigurationBuilder().AddCommandLine(args, switchMappings);
+
+        var greetings = Environment.GetEnvironmentVariable("GREETINGS");
+        Console.WriteLine(greetings);
+
         var config = builder.Build();
         Console.WriteLine($"Key1: '{config["Key1"]}'");
         Console.WriteLine($"Key2: '{config["Key2"]}'");
