@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Test
+    - name: Read Json File
       id: set_var
       run: |
           content=`cat ./inputs.json`
@@ -23,7 +23,6 @@ jobs:
           content="${content//$'\n'/'%0A'}"
           content="${content//$'\r'/'%0D'}"
           echo "::set-output name=inputsJson::$content"
-      shell: bash
 
     - name: .NET code
       id: dotnet-code
