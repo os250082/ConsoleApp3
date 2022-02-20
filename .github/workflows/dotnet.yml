@@ -20,9 +20,8 @@ jobs:
       run: |
           content=`cat ./inputs.json`
           echo "::set-output name=packageJson::$content"
-          echo "${{fromJson(steps.set_var.outputs.packageJson).buildPath}}"
       run: |
-          echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"    
+          echo "${{fromJson(steps.set_var.outputs.packageJson).buildPath}}"    
 
     - name: .NET code
       id: dotnet-code
