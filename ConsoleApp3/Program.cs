@@ -19,7 +19,8 @@ class Program
         var builder = new ConfigurationBuilder().AddCommandLine(args, switchMappings);
 
         var greetings = Environment.GetEnvironmentVariable("GREETINGS");
-        Console.WriteLine(greetings);
+        var split = greetings.Split(',');
+        Console.WriteLine(split[0]);
 
         var config = builder.Build();
         Console.WriteLine($"Key1: '{config["Key1"]}'");
