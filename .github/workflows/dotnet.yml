@@ -26,8 +26,10 @@ jobs:
       shell: bash
 
     - name: TestV2
+      env:
+        BUILD_PATH: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}
       run: |
-          echo "${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}"
+          echo "${BUILD_PATH}"
           echo "${{fromJson(steps.set_var.outputs.inputsJson).folderName}}"
           echo "${{fromJson(steps.set_var.outputs.inputsJson).filter}}"
           echo "${{fromJson(steps.set_var.outputs.inputsJson).split}}"
