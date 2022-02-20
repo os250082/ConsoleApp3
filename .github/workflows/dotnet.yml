@@ -29,6 +29,8 @@ jobs:
       run: |
           echo "${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}"
           echo "${{fromJson(steps.set_var.outputs.inputsJson).folderName}}"
+          echo "${{fromJson(steps.set_var.outputs.inputsJson).filter}}"
+          echo "${{fromJson(steps.set_var.outputs.inputsJson).split}}"
       shell: bash    
 
     - name: .NET code
