@@ -40,7 +40,7 @@ jobs:
       id: dotnet-code
       uses: os250082/ConsoleApp3@main
       env:
-        GREETINGS: 'Hello, .NET developers!'
+        GREETINGS: "${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}"
         BUILD_PATH: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}
       with:
         buildPath: "${BUILD_PATH}"
