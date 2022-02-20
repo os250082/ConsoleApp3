@@ -20,7 +20,7 @@ class Program
 
         var greetings = Environment.GetEnvironmentVariable("GREETINGS");
         //var split = greetings.Split(',');
-        Console.WriteLine(split[0]);
+        Console.WriteLine(greetings[0]);
 
         var config = builder.Build();
         Console.WriteLine($"Key1: '{config["Key1"]}'");
