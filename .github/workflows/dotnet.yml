@@ -16,10 +16,13 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Test
+      id: set_var
       run: |
           content=`cat ./inputs.json`
           echo "::set-output name=packageJson::$content"
           echo "${{fromJson(steps.set_var.outputs.packageJson).buildPath}}"
+      run: |
+          echo "${{fromJson(steps.set_var.outputs.packageJson).version}}"    
 
     - name: .NET code
       id: dotnet-code
