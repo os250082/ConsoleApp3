@@ -18,4 +18,4 @@ jobs:
       with: 
         path: 'package.json'
         prop_path: 'version'
-    - run: echo ${{steps.version.outputs.prop}}
+    - run: echo 'aaa'
