@@ -28,11 +28,14 @@ jobs:
     - name: TestV2
       env:
         BUILD_PATH: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}
+        FOLDER_NAME: ${{fromJson(steps.set_var.outputs.inputsJson).folderName}}
+        FILTER: ${{fromJson(steps.set_var.outputs.inputsJson).filter}}
+        SPLIT: ${{fromJson(steps.set_var.outputs.inputsJson).split}}
       run: |
           echo "${BUILD_PATH}"
-          echo "${{fromJson(steps.set_var.outputs.inputsJson).folderName}}"
-          echo "${{fromJson(steps.set_var.outputs.inputsJson).filter}}"
-          echo "${{fromJson(steps.set_var.outputs.inputsJson).split}}"
+          echo "${FOLDER_NAME}"
+          echo "${FILTER}"
+          echo "${SPLIT}"
       shell: bash    
 
     - name: .NET code
