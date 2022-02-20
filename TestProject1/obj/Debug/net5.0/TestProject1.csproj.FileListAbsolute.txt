@@ -105,3 +105,8 @@ C:\GitHub\ConsoleApp3\TestProject1\obj\Debug\net5.0\ref\TestProject1.dll
 C:\GitHub\ConsoleApp3\TestProject1\obj\Debug\net5.0\TestProject1.pdb
 C:\GitHub\ConsoleApp3\TestProject1\obj\Debug\net5.0\TestProject1.genruntimeconfig.cache
 C:\GitHub\ConsoleApp3\TestProject1\bin\Debug\net5.0\CommandLine.dll
+C:\GitHub\ConsoleApp3\TestProject1\bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll
+C:\GitHub\ConsoleApp3\TestProject1\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\GitHub\ConsoleApp3\TestProject1\bin\Debug\net5.0\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\GitHub\ConsoleApp3\TestProject1\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\GitHub\ConsoleApp3\TestProject1\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

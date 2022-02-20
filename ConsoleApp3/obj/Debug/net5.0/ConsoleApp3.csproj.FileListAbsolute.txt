@@ -21,7 +21,6 @@ C:\GitHub\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ConsoleApp3.runtimeconfig.dev
 C:\GitHub\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ConsoleApp3.dll
 C:\GitHub\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ref\ConsoleApp3.dll
 C:\GitHub\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\ConsoleApp3.pdb
-C:\GitHub\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.csproj.AssemblyReference.cache
 C:\GitHub\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.GeneratedMSBuildEditorConfig.editorconfig
 C:\GitHub\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.AssemblyInfoInputs.cache
 C:\GitHub\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.AssemblyInfo.cs
@@ -32,3 +31,8 @@ C:\GitHub\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.pdb
 C:\GitHub\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.genruntimeconfig.cache
 C:\GitHub\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\CommandLine.dll
 C:\GitHub\ConsoleApp3\ConsoleApp3\obj\Debug\net5.0\ConsoleApp3.csproj.CopyComplete
+C:\GitHub\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\Microsoft.Extensions.Configuration.dll
+C:\GitHub\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\GitHub\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\GitHub\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\GitHub\ConsoleApp3\ConsoleApp3\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

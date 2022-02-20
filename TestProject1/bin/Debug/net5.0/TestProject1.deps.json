@@ -55,6 +55,52 @@
           "System.Threading": "4.3.0"
         }
       },
+      "Microsoft.Extensions.Configuration/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.CommandLine/6.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "6.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.CommandLine.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
       "Microsoft.NET.Test.Sdk/16.9.4": {
         "dependencies": {
           "Microsoft.CodeCoverage": "16.9.4",
@@ -831,6 +877,14 @@
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
       "System.Runtime.Extensions/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -1087,7 +1141,9 @@
       },
       "ConsoleApp3/1.0.0": {
         "dependencies": {
-          "CommandLineParser": "2.8.0"
+          "CommandLineParser": "2.8.0",
+          "Microsoft.Extensions.Configuration": "6.0.0",
+          "Microsoft.Extensions.Configuration.CommandLine": "6.0.0"
         },
         "runtime": {
           "ConsoleApp3.dll": {}
@@ -1128,6 +1184,34 @@
       "sha512": "sha512-17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "path": "microsoft.csharp/4.0.1",
       "hashPath": "microsoft.csharp.4.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tq2wXyh3fL17EMF2bXgRhU7JrbO3on93MRKYxzz4JzzvuGSA1l0W3GI9/tl8EO89TH+KWEymP7bcFway6z9fXg==",
+      "path": "microsoft.extensions.configuration/6.0.0",
+      "hashPath": "microsoft.extensions.configuration.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qWzV9o+ZRWq+pGm+1dF+R7qTgTYoXvbyowRoBxQJGfqTpqDun2eteerjRQhq5PQ/14S+lqto3Ft4gYaRyl4rdQ==",
+      "path": "microsoft.extensions.configuration.abstractions/6.0.0",
+      "hashPath": "microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.CommandLine/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3nL1qCkZ1Oxx14ZTzgo4MmlO7tso7F+TtMZAY2jUAtTLyAcDp+EDjk3RqafoKiNaePyPvvlleEcBxh3b2Hzl1g==",
+      "path": "microsoft.extensions.configuration.commandline/6.0.0",
+      "hashPath": "microsoft.extensions.configuration.commandline.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9+PnzmQFfEFNR9J2aDTfJGGupShHjOuGw4VUv+JB044biSHrnmCIMD+mJHmb2H7YryrfBEXDurxQ47gJZdCKNQ==",
+      "path": "microsoft.extensions.primitives/6.0.0",
+      "hashPath": "microsoft.extensions.primitives.6.0.0.nupkg.sha512"
     },
     "Microsoft.NET.Test.Sdk/16.9.4": {
       "type": "package",
@@ -1569,6 +1653,13 @@
       "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
