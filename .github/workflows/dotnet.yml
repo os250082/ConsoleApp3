@@ -26,9 +26,6 @@ jobs:
       shell: bash
 
     - name: TestV2
-      env:
-        FOLDER_NAME: ${{fromJson(steps.set_var.outputs.inputsJson).folderName}}
-        FILTER: ${{fromJson(steps.set_var.outputs.inputsJson).filter}}
       run: |
           echo "${BUILD_PATH}"
           echo "${FOLDER_NAME}"
