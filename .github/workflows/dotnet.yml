@@ -30,12 +30,11 @@ jobs:
         BUILD_PATH: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}
         FOLDER_NAME: ${{fromJson(steps.set_var.outputs.inputsJson).folderName}}
         FILTER: ${{fromJson(steps.set_var.outputs.inputsJson).filter}}
-        SPLIT: ${{fromJson(steps.set_var.outputs.inputsJson).split}}
       run: |
           echo "${BUILD_PATH}"
           echo "${FOLDER_NAME}"
           echo "${FILTER}"
-          echo "${SPLIT}"
+          echo "${{fromJson(steps.set_var.outputs.inputsJson).split}}"
       shell: bash    
 
     - name: .NET code
