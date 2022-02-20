@@ -43,7 +43,7 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        buildPath: '${BUILD_PATH}'
+        buildPath: "${BUILD_PATH}"
         folderName: 'c:\LibsLocal'
 
     - name: 'Test Output'
