@@ -9,7 +9,13 @@ inputs:
     required: true
   folderName:
     description: 'folderName'
-    required: true  
+    required: true
+  filter:
+    description: 'filter'
+    required: true
+  split:
+    description: 'split'
+    required: true       
 outputs:
   updated-dotnet:
     description: 'A boolean value'
