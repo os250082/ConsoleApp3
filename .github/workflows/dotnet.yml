@@ -15,6 +15,16 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Test
+      id: set_var
+      run: |
+          content=`cat ./inputs.json`
+          content="${content//'%'/'%25'}"
+          content="${content//$'\n'/'%0A'}"
+          content="${content//$'\r'/'%0D'}"
+          echo "::set-output name=inputsJson::$content"
+      shell: bash
+
     - name: TestV2
       env:
         FOLDER_NAME: ${{fromJson(steps.set_var.outputs.inputsJson).folderName}}
