@@ -12,23 +12,19 @@ class Program
     {
         var switchMappings = new Dictionary<string, string>()
         {
-            { "-buildPath", "key1" },
-            { "-folderName", "key2" },
-            { "-filter", "key3" },
-            { "-split", "key4" },
+            { "-buildPath", "buildPathKey" },
+            { "-folderName", "folderNameKey" },
+            { "-filter", "filterKey" },
+            { "-split", "splitKey" },
         };
 
         var builder = new ConfigurationBuilder().AddCommandLine(args, switchMappings);
 
-        //var greetings = Environment.GetEnvironmentVariable("GREETINGS");
-        //var split = greetings.Split(',');
-        //Console.WriteLine(split[0]);
-
         var config = builder.Build();
-        Console.WriteLine($"Key1: '{config["Key1"]}'");
-        Console.WriteLine($"Key2: '{config["Key2"]}'");
-        Console.WriteLine($"Key3: '{config["Key3"]}'");
-        Console.WriteLine($"Key4: '{config["Key4"]}'");
+        Console.WriteLine($"buildPathKey: '{config["buildPathKey"]}'");
+        Console.WriteLine($"folderNameKey: '{config["folderNameKey"]}'");
+        Console.WriteLine($"filterKey: '{config["filterKey"]}'");
+        Console.WriteLine($"splitKey: '{config["splitKey"]}'");
 
         string str = "Master";
         Console.WriteLine($"::set-output name=demo::{str}");
