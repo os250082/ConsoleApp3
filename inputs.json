@@ -2,8 +2,5 @@
     "buildPath": "c:\\build",
     "folderName" : "c:\\folder",
     "filter": "*.test.dll",
-    "split": {
-        "Retalix.StoreServer.Model.Test.Selling.Sell": "20",
-        "Retalix.StoreServer.Model.Test.Selling.Return": "10"
-    }
+    "split": ["Retalix.StoreServer.Model.Test.Selling.Sell:20", "Retalix.StoreServer.Model.Test.Selling.Return:10"]
 }
