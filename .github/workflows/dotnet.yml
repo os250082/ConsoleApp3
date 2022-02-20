@@ -38,8 +38,7 @@ jobs:
 
     - name: .NET code
       env:
-        GREETINGS: "${{fromJson(steps.set_var.outputs.inputsJson).split}}"
-        BUILD_PATH: "${{fromJson(steps.set_var.outputs.inputsJson).split}}"    
+        GREETINGS: ${{fromJson(steps.set_var.outputs.inputsJson).split}}   
       id: dotnet-code
       uses: os250082/ConsoleApp3@main
       with:
