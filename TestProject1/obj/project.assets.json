@@ -1735,7 +1735,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "ConsoleApp3/1.0.0": {
+      "ConsoleApp4/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -1744,10 +1744,10 @@
           "Microsoft.Extensions.Configuration.CommandLine": "6.0.0"
         },
         "compile": {
-          "bin/placeholder/ConsoleApp3.dll": {}
+          "bin/placeholder/ConsoleApp4.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ConsoleApp3.dll": {}
+          "bin/placeholder/ConsoleApp4.dll": {}
         }
       }
     }
@@ -6322,15 +6322,15 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "ConsoleApp3/1.0.0": {
+    "ConsoleApp4/1.0.0": {
       "type": "project",
-      "path": "../ConsoleApp3/ConsoleApp3.csproj",
-      "msbuildProject": "../ConsoleApp3/ConsoleApp3.csproj"
+      "path": "../ConsoleApp3/ConsoleApp4.csproj",
+      "msbuildProject": "../ConsoleApp3/ConsoleApp4.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "ConsoleApp3 >= 1.0.0",
+      "ConsoleApp4 >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.3",
       "MSTest.TestFramework >= 2.2.3",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
@@ -6364,8 +6364,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {
-              "projectPath": "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj"
+            "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp4.csproj": {
+              "projectPath": "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp4.csproj"
             }
           }
         }

@@ -4,12 +4,12 @@
     "C:\\GitHub\\ConsoleApp3\\TestProject1\\TestProject1.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {
+    "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
-        "projectName": "ConsoleApp3",
-        "projectPath": "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj",
+        "projectUniqueName": "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp4.csproj",
+        "projectName": "ConsoleApp4",
+        "projectPath": "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp4.csproj",
         "packagesPath": "C:\\Users\\os250082\\.nuget\\packages\\",
         "outputPath": "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\obj\\",
         "projectStyle": "PackageReference",
@@ -96,8 +96,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj": {
-                "projectPath": "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp3.csproj"
+              "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp4.csproj": {
+                "projectPath": "C:\\GitHub\\ConsoleApp3\\ConsoleApp3\\ConsoleApp4.csproj"
               }
             }
           }

@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "ConsoleApp3": {
-      "commandName": "Project",
-      "commandLineArgs": "-buildPath k1value -folderName k2value -filter k3value -split Retalix.StoreServer.Model.Test.Selling.Sell:20,Retalix.StoreServer.Model.Test.Selling.Return:10,Retalix.StoreServer.Model.Test.Selling.Promotion:5,Retalix.StoreServer.Model.Test.Selling.Rescan:20,Retalix.StoreServer.Model.Test.Price:20,Retalix.StoreServer.Model.Test.Selling.BPM:20,Retalix.StoreServer.DMS.Int.Test:3,Retalix.StoreServer.Model.Test.Selling.BusinessRules:20,.:15"
-    }
-  }
-}
