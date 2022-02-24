@@ -16,4 +16,4 @@ LABEL homepage="https://github.com/dotnet/samples"
 # Relayer the .NET SDK, anew with the build output
 FROM mcr.microsoft.com/dotnet/sdk:5.0
 COPY --from=build-env /out .
-ENTRYPOINT [ "dotnet", "/ConsoleApp3.dll" ]
+ENTRYPOINT [ "dotnet", "/TestsSplitter.dll" ]
