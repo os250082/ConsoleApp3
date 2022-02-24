@@ -33,11 +33,11 @@ jobs:
     #     filter: ${{fromJson(steps.set_var.outputs.inputsJson).filter}}
     #     split: ${{fromJson(steps.set_var.outputs.inputsJson).split}}
 
-  TestOutput:
+  Dotnet:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       
-    - name: JOB 2
+    - name: build
       run: |
-        echo 'Great Job ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}'      
+        dotnet run      
