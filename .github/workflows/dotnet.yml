@@ -24,11 +24,11 @@ jobs:
           content="${content//$'\r'/'%0D'}"
           echo "::set-output name=inputsJson::$content"
 
-    # - name: .NET code
-    #   id: dotnet-code
-    #   uses: os250082/ConsoleApp3/TestsSplitter/TestsSplitter@main
-    #   with:
-    #     buildPath: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}
+    - name: .NET code
+      id: dotnet-code
+      uses: os250082/ConsoleApp3/TestsSplitter/TestsSplitter@main
+      with:
+        buildPath: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}
     #     folderName: ${{fromJson(steps.set_var.outputs.inputsJson).folderName}}
     #     filter: ${{fromJson(steps.set_var.outputs.inputsJson).filter}}
     #     split: ${{fromJson(steps.set_var.outputs.inputsJson).split}}
@@ -41,4 +41,4 @@ jobs:
       
     - name: build
       run: |
-        dotnet run      
+        dotnet publish ./DotNet.GitHubAction/DotNet.GitHubAction.csproj -c Release -o out --no-self-contained      

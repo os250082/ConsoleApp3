@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using static CommandLine.Parser;
 
 namespace TestsSplitter
 {
@@ -13,6 +15,7 @@ namespace TestsSplitter
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello");
             ParseArgs(new List<string>(args));
 
             var splitter = new TestsSplitter(_buildPath, _folderName, _filter, testClassesSplitter);
