@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -18,8 +18,11 @@ jobs:
     - name: Read Json File
       id: set_var
       run: |
-          $PowerShellObject=Get-Content -Path ./inputs.json | ConvertFrom-Json
-          echo "::set-output name=inputsJson::$PowerShellObject"
+          content=`cat ./inputs.json`
+          content="${content//'%'/'%25'}"
+          content="${content//$'\n'/'%0A'}"
+          content="${content//$'\r'/'%0D'}"
+          echo "::set-output name=inputsJson::$content"
 
     # - name: .NET code
     #   id: dotnet-code
@@ -30,6 +33,7 @@ jobs:
     #     filter: ${{fromJson(steps.set_var.outputs.inputsJson).filter}}
     #     split: ${{fromJson(steps.set_var.outputs.inputsJson).split}}
 
-    - name: .NET code
+    - name: 'Test Output'
+      if: ${{ steps.dotnet-code.outputs.updated-dotnet }} == 'true'
       run: |
-        echo 'Great Job ${{ fromJson(steps.set_var.outputs.inputsJson).buildPath }}'      
+        echo 'Great Job ${{ steps.dotnet-code.outputs.demo }}'      
