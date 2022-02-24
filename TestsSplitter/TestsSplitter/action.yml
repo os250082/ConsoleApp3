@@ -6,16 +6,7 @@ branding:
 inputs:
   buildPath:
     description: 'buildPath'
-    required: true
-  folderName:
-    description: 'folderName'
-    required: true
-  filter:
-    description: 'filter'
-    required: true
-  split:
-    description: 'split'
-    required: true       
+    required: true   
 outputs:
   updated-dotnet:
     description: 'A boolean value'
@@ -27,9 +18,3 @@ runs:
   args:
   - '-buildPath'
   - ${{ inputs.buildPath }}
-  - '-folderName'
-  - ${{ inputs.folderName }}
-  - '-filter'
-  - ${{ inputs.filter }}
-  - '-split'
-  - ${{ inputs.split }}
