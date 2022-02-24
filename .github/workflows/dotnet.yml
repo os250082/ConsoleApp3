@@ -18,7 +18,7 @@ jobs:
     - name: Read Json File
       id: set_var
       run: |
-          content=`cat ./inputs.json`
+          content=`type ./inputs.json`
           content="${content//'%'/'%25'}"
           content="${content//$'\n'/'%0A'}"
           content="${content//$'\r'/'%0D'}"
