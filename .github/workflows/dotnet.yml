@@ -26,7 +26,7 @@ jobs:
 
     - name: .NET code
       id: dotnet-code
-      uses: os250082/ConsoleApp3@main
+      uses: os250082/ConsoleApp3/TestsSplitter/TestsSplitter@main
       with:
         buildPath: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}
         folderName: ${{fromJson(steps.set_var.outputs.inputsJson).folderName}}
