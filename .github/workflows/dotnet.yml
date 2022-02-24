@@ -19,7 +19,7 @@ jobs:
       id: set_var
       run: |
           $PowerShellObject=Get-Content -Path ./inputs.json | ConvertFrom-Json
-          echo "::set-output name=inputsJson::$content"
+          echo "::set-output name=inputsJson::$PowerShellObject"
 
     - name: .NET code
       id: dotnet-code
