@@ -36,5 +36,8 @@ jobs:
   Test Output:
 
     runs-on: ubuntu-latest
+    steps:
+      
+    - name: JOB 2
       run: |
         echo 'Great Job ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}'      
