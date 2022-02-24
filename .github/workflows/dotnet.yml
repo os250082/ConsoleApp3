@@ -18,10 +18,7 @@ jobs:
     - name: Read Json File
       id: set_var
       run: |
-          content=`type ./inputs.json`
-          content="${content//'%'/'%25'}"
-          content="${content//$'\n'/'%0A'}"
-          content="${content//$'\r'/'%0D'}"
+          $PowerShellObject=Get-Content -Path ./inputs.json | ConvertFrom-Json
           echo "::set-output name=inputsJson::$content"
 
     - name: .NET code
