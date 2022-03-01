@@ -15,7 +15,6 @@ namespace DotNet.GitHubAction
 
         [Option('o', "owner",
             Required = true,
-            HelpText = "The owner, for example: \"dotnet\". Assign from `github.repository_owner`.")]
         public string Owner { get; set; } = null!;
     }
 }
