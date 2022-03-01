@@ -1,4 +1,4 @@
-name: '.NET code metric analyzer'
+name: '.NET code'
 inputs:
   owner:
     description: 'The owner'

@@ -17,9 +17,7 @@ jobs:
       id: dotnet-code
       uses: os250082/ConsoleApp3/MyApp@main
       env:
-        GREETINGS: 
-          - value1
-          - value2
+        GREETINGS: [value1, value2]
 
       with:
         owner: ${{ github.repository_owner }}
