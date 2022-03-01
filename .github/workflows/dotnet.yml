@@ -20,6 +20,6 @@ jobs:
       id: dotnet-code
       uses: os250082/ConsoleApp3/MyApp@main
       env:
-        GREETINGS: 'Hello, .NET developers!!'
+        GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: ${{ $servers }}
+        owner: ${{ github.repository_owner }}
