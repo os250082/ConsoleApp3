@@ -7,7 +7,7 @@ on:
 
   workflow_dispatch:
 env:
-  Key1: c:\1\ws\azure    
+  KET1: c:\1\ws\azure    
 
 jobs:
   Dotnet:
@@ -21,4 +21,4 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: ${{ '$env:Key1' }}
+        owner: "${KET1}"
