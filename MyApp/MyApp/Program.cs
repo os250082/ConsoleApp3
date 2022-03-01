@@ -7,8 +7,7 @@ Console.WriteLine("Hello, World!");
 
 static async Task Start(ActionInputs inputs)
 {
-    var greetings = Environment.GetEnvironmentVariable("GREETINGS");
-    Console.WriteLine(greetings);
+    Console.WriteLine(inputs.Owner);
 }
 
 var parser = Default.ParseArguments<ActionInputs>(() => new(), args);
