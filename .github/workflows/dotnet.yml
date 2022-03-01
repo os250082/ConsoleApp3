@@ -5,7 +5,9 @@ on:
     branches: [ main ]
     paths:
 
-  workflow_dispatch:  
+  workflow_dispatch:
+env:
+  Key1: c:\1\ws\azure    
 
 jobs:
   Dotnet:
@@ -19,4 +21,4 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: ${{ github.repository_owner }}
+        owner: ${{ "$ENV:Key1" }}
