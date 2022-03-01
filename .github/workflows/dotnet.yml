@@ -5,11 +5,11 @@ on:
     branches: [ main ]
     paths:
 
-  workflow_dispatch:
+  workflow_dispatch:  
 
 jobs:
   Dotnet:
-    runs-on: [self-hosted, ps_fat]
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
 
@@ -17,6 +17,9 @@ jobs:
       id: dotnet-code
       uses: os250082/ConsoleApp3/MyApp@main
       env:
-        GREETINGS: 'Hello, .NET developers!'
+        GREETINGS: 
+          - value1
+          - value2
+
       with:
         owner: ${{ github.repository_owner }}
