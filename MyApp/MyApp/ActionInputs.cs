@@ -10,12 +10,7 @@ namespace DotNet.GitHubAction
 
         public ActionInputs()
         {
-            var greetings = Environment.GetEnvironmentVariable("GREETINGS");
-            if (greetings is { Length: > 0 })
-            {
-                Console.WriteLine(greetings);
-                Console.WriteLine(" aaa");
-            }
+            
         }
 
         [Option('o', "owner",
