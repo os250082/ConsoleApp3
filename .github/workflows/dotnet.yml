@@ -21,4 +21,4 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: $ENV:Key1
+        owner: "$ENV:Key1"
