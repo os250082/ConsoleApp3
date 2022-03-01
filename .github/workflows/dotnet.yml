@@ -8,19 +8,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Read Json File
-      id: set_var
-      run: |
-          content=`cat ./inputs.json`
-          echo "::set-output name=inputsJson::$content"
-
   Dotnet:
     needs: build
     runs-on: windows-latest
@@ -29,6 +16,8 @@ jobs:
       
     - name: .NET code
       id: dotnet-code
-      uses: os250082/ConsoleApp3/TestsSplitter/TestsSplitter@main
+      uses: os250082/ConsoleApp3/MyApp/MyApp@main
+      env:
+        GREETINGS: 'Hello, .NET developers!'
       with:
-        buildPath: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}} 
+        owner: ${{ github.repository_owner }}

@@ -1,0 +1,11 @@
+name: '.NET code metric analyzer'
+inputs:
+  owner:
+    description: 'The owner'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+  - '-o'
+  - ${{ inputs.owner }}
