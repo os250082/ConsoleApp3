@@ -11,12 +11,14 @@ jobs:
   Dotnet:
     runs-on: ubuntu-latest
     steps:
+    - servers: '[{"id": "serverId", "username": "username", "password": "password"}]'
     - uses: actions/checkout@v2
 
     - name: .NET code
       id: dotnet-code
+      
       uses: os250082/ConsoleApp3/MyApp@main
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: [\"a\", \"b\", \"c\"]
+        owner: $servers
