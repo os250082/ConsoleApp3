@@ -19,4 +19,4 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: [value1, value2]
+        owner: [\"a\", \"b\", \"c\"]
