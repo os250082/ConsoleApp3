@@ -31,7 +31,4 @@ jobs:
       id: dotnet-code
       uses: os250082/ConsoleApp3/TestsSplitter/TestsSplitter@main
       with:
-        buildPath: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}}
-    #     folderName: ${{fromJson(steps.set_var.outputs.inputsJson).folderName}}
-    #     filter: ${{fromJson(steps.set_var.outputs.inputsJson).filter}}
-    #     split: ${{fromJson(steps.set_var.outputs.inputsJson).split}}      
+        buildPath: ${{fromJson(steps.set_var.outputs.inputsJson).buildPath}} 
