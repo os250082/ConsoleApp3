@@ -13,6 +13,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
+    - name: 'Print manual run reason'
+      if: ${{ github.event_name == 'workflow_dispatch' }}
+      run: |
+        echo 'Reason: ${{ github.event.inputs.reason }}'
+
     - name: .NET code
       id: dotnet-code
       uses: os250082/ConsoleApp3/MyApp/MyApp@main
