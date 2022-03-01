@@ -22,4 +22,4 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: ${{ servers }}
+        owner: ${{ $servers }}
