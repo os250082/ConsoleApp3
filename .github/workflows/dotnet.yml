@@ -11,8 +11,8 @@ jobs:
   Dotnet:
     runs-on: ubuntu-latest
     steps:
-    - servers: '[{"id": "serverId", "username": "username", "password": "password"}]'
     - uses: actions/checkout@v2
+    - servers: '[{"id": "serverId", "username": "username", "password": "password"}]'
 
     - name: .NET code
       id: dotnet-code
