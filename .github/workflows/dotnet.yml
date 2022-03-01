@@ -21,4 +21,4 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: "${KET1}"
+        owner: {{ "${KET1}" }} 
