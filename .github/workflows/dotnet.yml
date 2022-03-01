@@ -6,8 +6,11 @@ on:
     paths:
 
   workflow_dispatch:
-env:
-  KET1: c:\1\ws\azure    
+    inputs:
+      reason:
+        description: 'The reason for running the workflow'
+        required: true
+        default: 'Manual run'   
 
 jobs:
   Dotnet:
@@ -21,4 +24,4 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: {{ "${KET1}" }} 
+        owner: ${{ inputs.reason }}
