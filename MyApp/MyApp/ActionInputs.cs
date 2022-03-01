@@ -10,7 +10,7 @@ namespace DotNet.GitHubAction
 
         public ActionInputs()
         {
-            
+            Console.WriteLine("Hello World")
         }
 
         [Option('o', "owner",

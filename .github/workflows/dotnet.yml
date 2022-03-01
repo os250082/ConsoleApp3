@@ -12,9 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: s4u/maven-settings-action@v1
-      with:
-        servers: '[{"id": "serverId", "username": "username", "password": "password"}]'
 
     - name: .NET code
       id: dotnet-code
