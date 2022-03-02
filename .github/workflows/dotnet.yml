@@ -18,10 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: .NET code
-      id: dotnet-code
-      uses: os250082/ConsoleApp3/MyApp@main
-      env:
-        GREETINGS: 'Hello, .NET developers!'
-      with:
-        owner: ${{ github.event.inputs.reason }}
+    - name: 'Print manual run reason'
+      if: ${{ github.event_name == 'workflow_dispatch' }}
+      run: |
+        echo 'Reason: ${{ github.event.inputs.reason }}'
