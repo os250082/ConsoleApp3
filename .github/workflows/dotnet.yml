@@ -14,7 +14,7 @@ on:
 
 jobs:
   Dotnet:
-    runs-on: [self-hosted, WILOS250082-R4U]
+    runs-on: [self-hosted, ps_fat]
     steps:
     - uses: actions/checkout@v2
 
