@@ -14,7 +14,7 @@ on:
 
 jobs:
   Dotnet:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, WILOS250082-R4U]
     steps:
     - uses: actions/checkout@v2
 
@@ -24,4 +24,4 @@ jobs:
       env:
         GREETINGS: 'Hello, .NET developers!'
       with:
-        owner: ${{ inputs.reason }}
+        owner: ${{ github.event.inputs.reason }}
