@@ -6,7 +6,7 @@ namespace DotNet.GitHubAction
     public class ActionInputs
     {
         [Option('o', "owner", Required = true)]
-        public string Owner { get; set; } = null!;
+        public string Ownerbbb { get; set; } = null!;
 
         public string Owner { get; set; } = null!;
 
