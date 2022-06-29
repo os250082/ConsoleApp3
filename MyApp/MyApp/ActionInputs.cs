@@ -15,5 +15,7 @@ namespace DotNet.GitHubAction
         public string Owner3 { get; set; } = null!;
 
         public string Owner4 { get; set; } = null!;
+
+        public string Owner5 { get; set; } = null!;
     }
 }
