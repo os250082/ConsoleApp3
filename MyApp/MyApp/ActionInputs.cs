@@ -8,7 +8,7 @@ namespace DotNet.GitHubAction
         [Option('o', "owner", Required = true)]
         public string Owneraaa { get; set; } = null!;
 
-        public string Owner { get; set; } = null!;
+        public string Ownerm { get; set; } = null!;
 
         public string Owner2 { get; set; } = null!;
 
