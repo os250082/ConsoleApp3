@@ -12,7 +12,7 @@ namespace DotNet.GitHubAction
 
         public string Owner2 { get; set; } = null!;
 
-        public string Owner3 { get; set; } = null!;
+        public string Owner333 { get; set; } = null!;
 
         public string Owner4 { get; set; } = null!;
 
