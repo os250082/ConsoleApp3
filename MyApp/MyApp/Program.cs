@@ -3,7 +3,7 @@ using CommandLine;
 using DotNet.GitHubAction;
 using static CommandLine.Parser;
 
-Console.WriteLine("567Hello, Worldd!ddd");
+Console.WriteLine("567Hello, Worldd!dddeee");
 
 static async Task Start(ActionInputs inputs)
 {
